@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hiring</title>
+  </head>
+  <body>
+    <!-- http://flowchart.js.org/ -->
+    <h1>招人 <small>程序员版</small></h1>
+    <script type="text/plain" class="chart">
+start=>start: 开始
+end=>end: 结束
+is_funded=>condition: 是否有钱（融资了）？
+idea1=>operation: 以「未来」为卖点，寻求认同价值并不求短期回报的人
+idea2=>operation: 和其它酷工作的创业公司竞争的条件是：薪资；办公环境；成长福利
+user1=>operation: 对象：实习生；普通程序员；不差钱的高级程序员|success
+user2=>operation: 对象：有潜力实习生；高级程序员|success
+attention=>inputoutput: 程序员需要被尊重|danger
+
+start->is_funded
+is_funded(yes)->idea2->user2->attention
+is_funded(no)->idea1->user1->attention
+attention->end
+    </script>
+    <div class="content">
+      <h2>指南 <small>共识：员工成长了公司也会成长；高效不仅可以让公司节省大量人力财力，有时甚至是成败的关键</small></h2>
+      <dl>
+        <dt>基础保障</dt>
+        <dd>公司合法合规；五险一金</dd>
+        <dt>招聘途径</dt>
+        <dd>朋友推荐 &gt; 猎头推荐 &gt; 技术论坛 &gt; 自荐 &gt; 内部推荐 &gt; 校园招聘</dd>
+        <dt>办公环境</dt>
+        <dd>非远程的话，舒适是最基本的要求。硬件投入（显示器、Mac、机械键盘、座椅等）最好可以不计成本</dd>
+        <dt>成长福利</dt>
+        <dd>导师制；书籍、讲座投资；团队建设；开放自由的氛围</dd>
+      </dl>
+
+    </div>
+
+    <link href="lib/style.css" rel="stylesheet"></link>
+    <script src="lib/raphael-min.js"></script>
+    <script src="lib/flowchart.min.js"></script>
+    <script src="lib/app.js"></script>
+  </body>
+</html>
