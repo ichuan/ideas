@@ -27,7 +27,7 @@ dl {
 }
 dt {
   float: left;
-  font-weight: bold;
+  font-weight: 500;
   margin-right: 10px;
 }
 .content {
